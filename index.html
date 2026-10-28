@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tea Stall shop | Authentic Offline Street Chai & Filter Kaapi</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Tea Stall shop is an authentic street-corner offline tea stall serving handcrafted Kulhad Masala Chai, Kumbakonam Degree Filter Kaapi, and warm Bun Maska fresh at the counter. No delivery, 100% fresh in-stall experience.">
+  <meta name="keywords" content="tea stall, tea stall shop, kulhad chai, filter coffee, degree kaapi, masala tea, offline tea stall, bun maska, street chai, chaiwala">
+  <meta name="author" content="Tea Stall shop">
+  <meta name="theme-color" content="#1e130c">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tea Stall shop | Fresh Handcrafted Chai & Coffee at the Stall">
+  <meta property="og:description" content="Experience authentic slow-boiled masala chai in earthen clay kulhads and frothy South Indian filter kaapi. Fresh off the stove, 100% offline stall experience.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:image" content="assets/images/hero_kulhad_chai.jpg">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>☕</text></svg>">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       TOP ANNOUNCEMENT BANNER - 100% OFFLINE STALL NOTICE
+       ========================================================================== -->
+  <aside class="top-notice-bar" aria-label="Stall Operations Announcement">
+    <div class="container notice-content">
+      <span class="notice-badge">100% Offline Stall</span>
+      <span class="notice-text">
+        <strong>No Online Delivery:</strong> Authentic chai belongs in hot clay kulhads, not cold delivery bags! Visit our counter for fresh live kettle brewing.
+      </span>
+      <span class="notice-timing">
+        <span>⏰</span> Daily: 6:00 AM – 11:30 AM &amp; 3:30 PM – 10:30 PM
+      </span>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION
+       ========================================================================== -->
+  <header class="navbar" id="main-navbar">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Tea Stall shop Home">
+        <div class="logo-icon-wrap" aria-hidden="true">🫖</div>
+        <div class="brand-text-wrap">
+          <span class="brand-name">Tea Stall <span>shop</span></span>
+          <span class="brand-subtitle">The Street Corner Brew</span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu" id="primary-menu">
+          <li><a href="#why-offline" class="nav-link">Why Offline?</a></li>
+          <li><a href="#menu" class="nav-link">Stall Menu</a></li>
+          <li><a href="#flavor-match" class="nav-link">Brew Matcher</a></li>
+          <li><a href="#tradition" class="nav-link">Our Heritage</a></li>
+          <li><a href="#timings" class="nav-link">Timings &amp; Visit</a></li>
+          <li><a href="#visitor-wall" class="nav-link">Stall Notes</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Status & Counter Slip Button) -->
+      <div class="nav-actions">
+        <!-- Live Status Pill -->
+        <div class="stall-status-badge" id="stall-live-badge" title="Live Stall Status">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="stall-live-status-text">Checking Stall...</span>
+        </div>
+
+        <!-- Counter Slip Planner Button -->
+        <button class="btn-counter-slip" id="nav-slip-btn" aria-label="Open Counter Slip">
+          <span>🧾 Counter Slip</span>
+          <span class="counter-count" id="nav-slip-count">0</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+          ☰
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="home">
+    <div class="hero-backdrop-glow" aria-hidden="true"></div>
+    <div class="container hero-grid">
+      
+      <!-- Hero Copy Column -->
+      <div class="hero-text-col">
+        <div class="hero-badge-pill">
+          <i>✦</i> Authentic Brass Kettle &amp; Terracotta Kulhad Brews
+        </div>
+
+        <h1 class="hero-title">
+          Where Every Sip Has a Story &amp; <span class="highlight-chai">Clay Kulhads Pour Fresh</span>
+        </h1>
+
+        <p class="hero-description">
+          Welcome to <strong>Tea Stall shop</strong>, your neighborhood offline sanctuary for slow-simmered Masala Chais, frothy Kumbakonam Filter Kaapis, and warm buttered Bun Maska. Poured fresh before your eyes, strictly offline.
+        </p>
+
+        <!-- Offline Stall Notice Card -->
+        <div class="hero-offline-notice">
+          <div class="notice-icon-circle" aria-hidden="true">📍</div>
+          <div class="notice-text-content">
+            <h4>Walk-in Counter Experience Only</h4>
+            <p id="hero-status-ticker">
+              We do not deliver. Great chai is meant to be enjoyed piping hot in your hands, right at the stall counter while having good conversations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action Buttons -->
+        <div class="hero-cta-group">
+          <a href="#menu" class="btn btn-primary" id="hero-explore-menu-btn">
+            <span>🫖 Explore Stall Menu</span>
+          </a>
+          <a href="#timings" class="btn btn-secondary" id="hero-directions-btn">
+            <span>🗺️ Stall Location &amp; Hours</span>
+          </a>
+          <button class="btn btn-outline" id="hero-calc-slip-btn">
+            <span>🧾 Quick Counter Slip</span>
+          </button>
+        </div>
+
+        <!-- Key Highlights Stats -->
+        <div class="hero-stats-row">
+          <div class="stat-item">
+            <div class="stat-number">100<span>%</span></div>
+            <div class="stat-label">Offline &amp; Fresh</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">₹15<span>+</span></div>
+            <div class="stat-label">Pocket-Friendly Cups</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20<span>+</span></div>
+            <div class="stat-label">Handcrafted Brews</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Column -->
+      <div class="hero-visual-col">
+        <div class="hero-visual-card">
+          <div class="hero-image-wrapper">
+            <img src="assets/images/hero_kulhad_chai.jpg" alt="Steaming hot Indian masala chai pouring from brass kettle into clay kulhad" loading="eager">
+            
+            <!-- Dynamic Steam Particles -->
+            <div class="steam-container" aria-hidden="true">
+              <div class="steam-particle"></div>
+              <div class="steam-particle"></div>
+              <div class="steam-particle"></div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top">
+            <div class="floating-badge-icon">🏺</div>
+            <div class="floating-badge-text">
+              <h5>Pure Clay Kulhad</h5>
+              <p>Natural Earthy Aroma</p>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <div class="floating-badge-icon">☕</div>
+            <div class="floating-badge-text">
+              <h5>Brass Kaapi Dabara</h5>
+              <p>Thick Foam Decoction</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       WHY PROUDLY OFFLINE SECTION
+       ========================================================================== */ -->
+  <section class="section-padding why-offline-section" id="why-offline">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Our Philosophy</span>
+        <h2 class="section-title">Why We Are Proudly 100% Offline</h2>
+        <p class="section-desc">
+          In a world of cold delivery boxes and soggy paper cups, we refuse to compromise the true soul of Indian chai culture. Here is why you will only ever taste our tea right at the stall.
+        </p>
+      </div>
+
+      <div class="offline-features-grid">
+        
+        <!-- Feature 1 -->
+        <article class="offline-feature-card">
+          <div class="feature-icon-box">🫖</div>
+          <h3 class="feature-card-title">Boiling Hot, Not Reheated</h3>
+          <p class="feature-card-desc">
+            Chai loses its vibrant soul within 45 seconds of leaving the stove. Our chai is poured directly from boiling brass kettles into your hands.
+          </p>
+          <span class="feature-tagline">✦ Direct From Kettle</span>
+        </article>
+
+        <!-- Feature 2 -->
+        <article class="offline-feature-card">
+          <div class="feature-icon-box">🏺</div>
+          <h3 class="feature-card-title">Clay Kulhads Over Cardboard</h3>
+          <p class="feature-card-desc">
+            Delivery means plastic lids and wax-lined cups. At our stall, you drink from handmade, biodegradable clay kulhads that infuse deep earthy mineral notes.
+          </p>
+          <span class="feature-tagline">✦ Handcrafted Terracotta</span>
+        </article>
+
+        <!-- Feature 3 -->
+        <article class="offline-feature-card">
+          <div class="feature-icon-box">☕</div>
+          <h3 class="feature-card-title">Meter-High Coffee Pours</h3>
+          <p class="feature-card-desc">
+            Authentic South Indian Filter Kaapi requires the theatric "meter-pour" between brass dabara and tumbler to build rich velvet crema. Impossible in a carton!
+          </p>
+          <span class="feature-tagline">✦ Fresh Brass Dabara</span>
+        </article>
+
+        <!-- Feature 4 -->
+        <article class="offline-feature-card">
+          <div class="feature-icon-box">🗣️</div>
+          <h3 class="feature-card-title">Street Corner Conversations</h3>
+          <p class="feature-card-desc">
+            The tea stall is where friendships are forged, morning papers are read, laughter echoes, and minds unwind. You can't download street vibe.
+          </p>
+          <span class="feature-tagline">✦ Authentic Community</span>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       INTERACTIVE BREW FINDER (QUIZ)
+       ========================================================================== -->
+  <section class="section-padding" id="flavor-match">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Interactive Picker</span>
+        <h2 class="section-title">Find Your Perfect Stall Brew</h2>
+        <p class="section-desc">
+          Tell us your mood, and our stall kettle algorithm will recommend the ideal cup to order when you reach the counter!
+        </p>
+      </div>
+
+      <div class="flavor-finder-wrap">
+        <div class="quiz-steps-grid">
+          
+          <!-- Step 1 -->
+          <div class="quiz-step-card">
+            <h4 class="quiz-step-title"><span>1</span> What's Your Mood?</h4>
+            <div class="quiz-options">
+              <button class="quiz-btn active" data-type="mood" data-val="comfort">
+                <span>Cozy &amp; Comforting</span> <span>🛌</span>
+              </button>
+              <button class="quiz-btn" data-type="mood" data-val="energy">
+                <span>High Energy Kick</span> <span>⚡</span>
+              </button>
+              <button class="quiz-btn" data-type="mood" data-val="light">
+                <span>Light &amp; Refreshing</span> <span>🌿</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="quiz-step-card">
+            <h4 class="quiz-step-title"><span>2</span> Preferred Base?</h4>
+            <div class="quiz-options">
+              <button class="quiz-btn active" data-type="base" data-val="milk">
+                <span>Thick Full-Cream Milk</span> <span>🥛</span>
+              </button>
+              <button class="quiz-btn" data-type="base" data-val="kaapi">
+                <span>South Roasted Kaapi</span> <span>☕</span>
+              </button>
+              <button class="quiz-btn" data-type="base" data-val="herbal">
+                <span>Water &amp; Herbs (No Milk)</span> <span>🍃</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="quiz-step-card">
+            <h4 class="quiz-step-title"><span>3</span> Spice &amp; Sweetness?</h4>
+            <div class="quiz-options">
+              <button class="quiz-btn active" data-type="spice" data-val="spicy">
+                <span>Spicy Ginger &amp; Clove</span> <span>🌶️</span>
+              </button>
+              <button class="quiz-btn" data-type="spice" data-val="sweet">
+                <span>Velvet Sweet Cream</span> <span>🍯</span>
+              </button>
+              <button class="quiz-btn" data-type="spice" data-val="bold">
+                <span>Dark &amp; Bitter Roast</span> <span>🍫</span>
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Result Box -->
+        <div class="quiz-result-box">
+          <div class="result-drink-info">
+            <div class="result-cup-icon" aria-hidden="true">☕</div>
+            <div class="result-text">
+              <span style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 1px; color: var(--saffron-gold); font-weight:700;">Recommended For You:</span>
+              <h4 id="quiz-result-title">Kulhad Masala Chai</h4>
+              <p id="quiz-result-desc">The soul warmer. Rich, spicy ginger-clove aroma poured piping hot into natural clay.</p>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-sm" id="quiz-add-btn">
+            <span>+</span> Add to Counter Slip
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MAIN STALL MENU SECTION
+       ========================================================================== -->
+  <section class="section-padding menu-section" id="menu">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Fresh at the Counter</span>
+        <h2 class="section-title">The Authentic Stall Menu</h2>
+        <p class="section-desc">
+          Every item is handcrafted with pure farm milk, fresh mountain ginger, hand-crushed whole spices, and roasted coffee beans. Add items to your Counter Slip before walking up to the stall!
+        </p>
+      </div>
+
+      <!-- Category Filter Navigation -->
+      <div class="menu-filter-nav" role="tablist" aria-label="Menu categories">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">
+          <span>✨</span> All Items (13)
+        </button>
+        <button class="filter-btn" data-filter="chai" role="tab" aria-selected="false">
+          <span>🫖</span> Signature Chais (5)
+        </button>
+        <button class="filter-btn" data-filter="coffee" role="tab" aria-selected="false">
+          <span>☕</span> Filter Coffees (3)
+        </button>
+        <button class="filter-btn" data-filter="herbal" role="tab" aria-selected="false">
+          <span>🌿</span> Herbal &amp; Kahwa (2)
+        </button>
+        <button class="filter-btn" data-filter="snack" role="tab" aria-selected="false">
+          <span>🍞</span> Stall Bites &amp; Snacks (4)
+        </button>
+      </div>
+
+      <!-- Menu Items Grid (Dynamically Populated by script.js) -->
+      <div class="menu-grid" id="menu-items-grid">
+        <!-- Rendered by JavaScript -->
+      </div>
+
+      <!-- Counter Slip Reminder Banner -->
+      <div style="margin-top: 50px; background: rgba(30, 19, 12, 0.85); border: 1px dashed rgba(228, 171, 101, 0.3); border-radius: var(--radius-md); padding: 20px 24px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="font-size: 2rem;">🧾</span>
+          <div>
+            <h4 style="font-size: 1.1rem; color: #fff; margin-bottom: 2px;">Ready to visit the stall counter?</h4>
+            <p style="font-size: 0.85rem; color: var(--crema-foam); margin: 0;">Generate your estimated bill slip to show the chaiwala for lightning-fast brewing.</p>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-sm" onclick="counterSlip.updateSlipUI(); document.getElementById('counter-slip-modal').classList.add('active');">
+          <span>View My Counter Slip</span>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LIVE KETTLE & BREWING TIMELINE
+       ========================================================================== -->
+  <section class="section-padding live-kettle-section">
+    <div class="container">
+      
+      <div class="kettle-status-box">
+        
+        <!-- Live Stove Visualization -->
+        <div class="kettle-visual-col">
+          <div class="kettle-icon-huge" aria-hidden="true">🫖</div>
+          <div class="pot-badge">✦ Live on Stove Now</div>
+          <h3 class="kettle-current-pot" id="current-pot-name">
+            Fresh Adrak Cardamom Chai (Batch #4) Simmering
+          </h3>
+          <p style="font-size: 0.88rem; color: var(--text-muted); max-width: 380px; margin: 0 auto;">
+            Our brass kettle never stops bubbling during stall hours. Fresh crushed spices added every 25 minutes.
+          </p>
+        </div>
+
+        <!-- Stall Daily Flow Schedule -->
+        <div class="kettle-schedule-col">
+          <span class="section-tag" style="margin-bottom: 10px;">Daily Stove Rhythm</span>
+          <h4>Best Times to Visit the Stall</h4>
+          
+          <div class="schedule-timeline">
+            <div class="timeline-slot">
+              <div class="slot-time">06:00 – 08:30 AM</div>
+              <div class="slot-details">
+                <h5>Sunrise Kadak Rush</h5>
+                <p>Morning walkers, joggers &amp; cycling clubs gather for steaming hot Adrak Chai &amp; Rusk.</p>
+              </div>
+            </div>
+
+            <div class="timeline-slot">
+              <div class="slot-time">08:30 – 11:30 AM</div>
+              <div class="slot-details">
+                <h5>The Kaapi &amp; Newspaper Hour</h5>
+                <p>Thick Kumbakonam Degree Kaapi pours &amp; fresh warm Bun Maska.</p>
+              </div>
+            </div>
+
+            <div class="timeline-slot">
+              <div class="slot-time">03:30 – 07:00 PM</div>
+              <div class="slot-details">
+                <h5>Post-Work Chai &amp; Samosa Hours</h5>
+                <p>Piping hot samosas, Irani chai, and cutting glasses buzzing with conversations.</p>
+              </div>
+            </div>
+
+            <div class="timeline-slot">
+              <div class="slot-time">07:00 – 10:30 PM</div>
+              <div class="slot-details">
+                <h5>Evening Kulhad Serenade</h5>
+                <p>Saffron Kesariya chais under warm fairy lights and chilly evening breeze.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HERITAGE & KULHAD TRADITION SECTION
+       ========================================================================== -->
+  <section class="section-padding tradition-section" id="tradition">
+    <div class="container">
+      
+      <div class="tradition-grid">
+        
+        <!-- Image Stack -->
+        <div class="tradition-images-stack">
+          <div class="tradition-main-img">
+            <img src="assets/images/stall_evening.jpg" alt="Artisan tea stall with warm glowing lanterns and clay cups">
+          </div>
+          <div class="tradition-overlay-img">
+            <img src="assets/images/filter_coffee.jpg" alt="South Indian filter coffee in brass dabara">
+          </div>
+        </div>
+
+        <!-- Story Copy -->
+        <div class="tradition-text-col">
+          <span class="section-tag">Since Day One</span>
+          <h2>A Tribute to the Humble Indian Street Stall</h2>
+          
+          <p class="tradition-story-p">
+            <strong>Tea Stall shop</strong> was born from a simple belief: the best memories, the deepest philosophical debates, and the purest connections happen while standing on a footpath, holding a scalding hot clay cup.
+          </p>
+
+          <div class="tradition-points">
+            
+            <div class="tradition-point-item">
+              <div class="tradition-point-icon">🏺</div>
+              <div>
+                <h5>Locally Sourced Terracotta</h5>
+                <p>Crafted by local potters using natural clay. Every kulhad is unglazed, porous, and returns to the earth without plastic waste.</p>
+              </div>
+            </div>
+
+            <div class="tradition-point-item">
+              <div class="tradition-point-icon">🫚</div>
+              <div>
+                <h5>Hand-Crushed Spice Mortars</h5>
+                <p>We never use pre-packaged tea powders or artificial spice extracts. Green cardamoms and ginger are pounded fresh right at the stall counter.</p>
+              </div>
+            </div>
+
+            <div class="tradition-point-item">
+              <div class="tradition-point-icon">🧈</div>
+              <div>
+                <h5>Fresh Bakery Daily</h5>
+                <p>Our soft Irani buns and crumbly Osmania biscuits are delivered fresh every dawn from century-old local bakeries.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <a href="#menu" class="btn btn-secondary">
+            <span>Explore The Stall Menu</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VISUAL GALLERY OF STALL AMBIANCE
+       ========================================================================== -->
+  <section class="section-padding gallery-section">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Visual Walkthrough</span>
+        <h2 class="section-title">Life at Tea Stall shop</h2>
+        <p class="section-desc">
+          Glimpses of boiling brass kettles, frothy filter coffee, and golden evening street tea gatherings.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        
+        <div class="gallery-item span-2">
+          <img src="assets/images/stall_evening.jpg" alt="Tea Stall evening counter ambiance with fairy lights and clay kulhads">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Evening tea rituals under warm glowing stall lanterns</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/hero_kulhad_chai.jpg" alt="Brass kettle pouring hot masala chai into clay kulhad">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Slow-simmered Masala Chai in handmade kulhad</span>
+          </div>
+        </div>
+
+        <div class="gallery-item">
+          <img src="assets/images/filter_coffee.jpg" alt="South Indian filter coffee in traditional brass dabara">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Authentic Kumbakonam Kaapi in brass dabara</span>
+          </div>
+        </div>
+
+        <div class="gallery-item span-2">
+          <img src="assets/images/stall_bun_maska.jpg" alt="Warm buttered bun maska and cutting chai glass at roadside stall">
+          <div class="gallery-overlay">
+            <span class="gallery-caption">Fresh Bun Maska with generous Amul butter and cutting chai</span>
+          </div>
+        </div>
+
+        <div class="gallery-item span-2">
+          <div style="background: linear-gradient(135deg, #2c1a11, #1e1109); height: 100%; border-radius: var(--radius-md); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px; text-align: center; border: 1px dashed rgba(228, 171, 101, 0.3);">
+            <span style="font-size: 2.8rem; margin-bottom: 8px;">📍</span>
+            <h4 style="font-size: 1.3rem; margin-bottom: 6px;">Nothing Beats Being Here</h4>
+            <p style="font-size: 0.88rem; color: var(--text-muted); max-width: 360px;">Photos can capture the sight, but only a visit to our stall lets you smell the roasted cardamom in the air.</p>
+            <a href="#timings" class="btn btn-primary btn-sm" style="margin-top: 14px;">Visit Our Stall Today</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       LOCATION, TIMINGS & VISIT US SECTION
+       ========================================================================== -->
+  <section class="section-padding location-section" id="timings">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Find Our Counter</span>
+        <h2 class="section-title">Visit Our Offline Stall</h2>
+        <p class="section-desc">
+          Drop by anytime during our operating shifts. Ample roadside standing area, bicycle racks, and genuine street hospitality await you.
+        </p>
+      </div>
+
+      <div class="location-wrapper">
+        
+        <!-- Info Column -->
+        <div class="location-info-col">
+          <h3>Stall Location &amp; Timings</h3>
+          
+          <div class="info-cards-list">
+            
+            <div class="info-card-item">
+              <div class="info-icon-badge">📍</div>
+              <div class="info-text-block">
+                <h5>Stall Address</h5>
+                <p>Corner of Banyan Tree Square, Opposite Heritage Clock Tower, Old Market Road, City Center</p>
+              </div>
+            </div>
+
+            <div class="info-card-item">
+              <div class="info-icon-badge">⏰</div>
+              <div class="info-text-block">
+                <h5>Daily Stall Shifts</h5>
+                <p>
+                  <strong>Morning Shift:</strong> 6:00 AM – 11:30 AM<br>
+                  <strong>Evening Shift:</strong> 3:30 PM – 10:30 PM<br>
+                  <em>(Open all 7 days of the week)</em>
+                </p>
+              </div>
+            </div>
+
+            <div class="info-card-item">
+              <div class="info-icon-badge">💳</div>
+              <div class="info-text-block">
+                <h5>Counter Payment Options</h5>
+                <p>All UPI Apps (Google Pay, PhonePe, Paytm, QR scan) &amp; Cash accepted right at the counter.</p>
+              </div>
+            </div>
+
+            <div class="info-card-item">
+              <div class="info-icon-badge">🚲</div>
+              <div class="info-text-block">
+                <h5>Amenities</h5>
+                <p>Cyclist parking racks, pet-friendly standing benches, organic kulhad disposal bins.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+              <span>🗺️ Get Directions via Google Maps</span>
+            </a>
+            <a href="tel:+919876543210" class="btn btn-secondary">
+              <span>📞 Stall Phone Inquiry</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Interactive Map Visual Column -->
+        <div class="location-map-col">
+          <div class="map-mockup-graphic"></div>
+          
+          <div class="map-pin-card">
+            <div class="map-pin-pulse">📍</div>
+            <h4>Tea Stall shop</h4>
+            <p>Banyan Tree Square Corner</p>
+            <div style="display: inline-block; background: rgba(56, 211, 116, 0.2); border: 1px solid var(--open-green); color: var(--open-green); padding: 4px 12px; border-radius: var(--radius-full); font-size: 0.75rem; font-weight: 700; text-transform: uppercase;">
+              Active Stall Counter
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       VISITOR COMMUNITY WALL & REVIEWS (PERSISTENT VIA LOCALSTORAGE)
+       ========================================================================== -->
+  <section class="section-padding wall-section" id="visitor-wall">
+    <div class="container">
+      
+      <div class="section-header">
+        <span class="section-tag">Street Gossip &amp; Love</span>
+        <h2 class="section-title">The Stall Community Wall</h2>
+        <p class="section-desc">
+          Stories, reviews, and chai notes penned down by our everyday regulars, morning joggers, and evening squads.
+        </p>
+      </div>
+
+      <!-- Notes Grid -->
+      <div class="wall-grid" id="wall-notes-grid">
+        <!-- Rendered by script.js -->
+      </div>
+
+      <!-- Add Your Chai Story Form -->
+      <div class="add-note-card">
+        <h4>Leave Your Stall Chai Story</h4>
+        <p>Visited our stall recently? Pin your note on our virtual community wall!</p>
+        
+        <form id="add-stall-note-form">
+          <div class="note-form-grid">
+            <div class="form-group">
+              <label for="note-name" style="font-size: 0.8rem; color: var(--saffron-gold);">Your Name</label>
+              <input type="text" id="note-name" class="form-input" placeholder="e.g. Rahul Sharma" required>
+            </div>
+            <div class="form-group">
+              <label for="note-role" style="font-size: 0.8rem; color: var(--saffron-gold);">Who Are You?</label>
+              <input type="text" id="note-role" class="form-input" placeholder="e.g. Regular Cyclist / Techie">
+            </div>
+            <div class="form-group full-width">
+              <label for="note-drink" style="font-size: 0.8rem; color: var(--saffron-gold);">Your Favorite Stall Brew</label>
+              <input type="text" id="note-drink" class="form-input" placeholder="e.g. Kulhad Masala Chai + Bun Maska" required>
+            </div>
+            <div class="form-group full-width">
+              <label for="note-message" style="font-size: 0.8rem; color: var(--saffron-gold);">Your Stall Memory or Review</label>
+              <textarea id="note-message" class="form-textarea" placeholder="Tell us about the aroma, the tea taste, or your chai conversations..." required></textarea>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <span>📌 Pin Note to Stall Wall</span>
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-brand-col">
+          <a href="#home" class="brand-logo" style="margin-bottom: 12px; display: inline-flex;">
+            <div class="logo-icon-wrap" aria-hidden="true">🫖</div>
+            <div class="brand-text-wrap">
+              <span class="brand-name">Tea Stall <span>shop</span></span>
+              <span class="brand-subtitle">The Street Corner Brew</span>
+            </div>
+          </a>
+          <p>
+            An authentic Indian street corner stall dedicated to slow-boiled spiced teas, South Indian filter kaapi, and the timeless art of slowing down.
+          </p>
+          <div class="offline-pledge-badge">
+            <span>🛡️</span> 100% Offline Promise &bull; No Cold Deliveries
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul class="footer-links">
+            <li><a href="#why-offline">Why Offline Only</a></li>
+            <li><a href="#menu">Complete Stall Menu</a></li>
+            <li><a href="#flavor-match">Find Your Brew Match</a></li>
+            <li><a href="#tradition">The Kulhad Tradition</a></li>
+            <li><a href="#visitor-wall">Customer Stories</a></li>
+          </ul>
+        </div>
+
+        <!-- Timings & Shifts -->
+        <div class="footer-col">
+          <h4>Counter Timings</h4>
+          <div class="footer-timing-badge">
+            <h5>Morning Brewing Shift</h5>
+            <p>06:00 AM – 11:30 AM</p>
+          </div>
+          <div class="footer-timing-badge">
+            <h5>Evening Sips Shift</h5>
+            <p>03:30 PM – 10:30 PM</p>
+          </div>
+          <p style="font-size: 0.78rem; color: var(--text-subtle); margin-top: 6px;">
+            Open all 7 days including public holidays.
+          </p>
+        </div>
+
+        <!-- Location & Contact -->
+        <div class="footer-col">
+          <h4>Stall Landmark</h4>
+          <p style="font-size: 0.88rem; line-height: 1.6; margin-bottom: 12px;">
+            📍 Corner of Banyan Tree Square,<br>
+            Opposite Heritage Clock Tower,<br>
+            Old Market Road, City Center
+          </p>
+          <p style="font-size: 0.84rem; color: var(--crema-foam);">
+            📞 Stall Inquiries: +91 98765 43210<br>
+            ✉️ Email: hello@teastallshop.local
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 <strong>Tea Stall shop</strong>. All rights reserved. Handcrafted for chai lovers.
+        </div>
+        <div>
+          Offline Stall Experience &bull; Fresh Kettle to Kulhad &bull; Pure Clay &bull; Real Spices
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       OFFLINE COUNTER SLIP MODAL (ESTIMATOR & TOKEN SLIP)
+       ========================================================================== -->
+  <div class="counter-slip-overlay" id="counter-slip-modal" role="dialog" aria-modal="true" aria-labelledby="slip-modal-heading">
+    <div class="slip-modal-container">
+      
+      <div class="slip-modal-header">
+        <h3 id="slip-modal-heading"><span>🧾</span> Stall Counter Slip</h3>
+        <button class="btn-close-modal" id="btn-close-slip" aria-label="Close Counter Slip">✕</button>
+      </div>
+
+      <div class="slip-body">
+        
+        <!-- Realistic Parchment Slip -->
+        <div class="parchment-slip" id="printable-parchment-slip">
+          <div class="slip-header">
+            <div class="slip-store-title">Tea Stall shop</div>
+            <div class="slip-badge-pill">Walk-in Counter Token</div>
+            <div class="slip-token-number" id="slip-token-id">TOKEN #TS-408</div>
+            <div style="font-size: 0.72rem; color: #735b48; margin-top: 4px;">Pay &amp; Sip at Stall &bull; No Delivery</div>
+          </div>
+
+          <!-- Items Rows -->
+          <div class="slip-items-list" id="slip-items-container">
+            <!-- Dynamically populated by script.js -->
+          </div>
+
+          <!-- Totals -->
+          <div class="slip-totals-area">
+            <div class="slip-total-row">
+              <span>Estimated Counter Bill:</span>
+              <span id="slip-total-amount">₹0</span>
+            </div>
+          </div>
+
+          <!-- Footer of Slip -->
+          <div class="slip-note-footer">
+            Show this slip / token on your phone at our stall counter for express preparation. Freshly brewed on your arrival!
+          </div>
+        </div>
+
+        <!-- Slip Actions -->
+        <div class="slip-actions-row">
+          <button class="btn btn-primary" id="btn-print-slip" style="flex: 1;">
+            <span>🖨️ Print / Save Slip</span>
+          </button>
+          <button class="btn btn-secondary" id="btn-clear-slip">
+            <span>Clear</span>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notice" id="stall-toast" role="alert" aria-live="polite"></div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
